@@ -1,0 +1,6 @@
+#!/usr/bin/awk -f
+BEGIN {
+    a = "GNU/Linux Darwin/macOS Microsoft/Windows"
+    split(a, array, " ")
+    print array[2]
+}
