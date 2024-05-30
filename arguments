@@ -1,5 +1,7 @@
 #!/usr/bin/awk -f
 BEGIN {
+    # ARGS
+        
     # print "O AWK é muito " ARGV[1] " e também é " ARGV[2]
     if (ARGV[1] == "") {
         print "Informe um valor!"
@@ -7,13 +9,15 @@ BEGIN {
             print "A raiz quadrada de "ARGV[1]" é " int(sqrt(ARGV[1]))
     }
 
-    num = 0
-    while(num < 10) {
-        print num
-        num = num + 1
-    }
+    # LOOPS
 
-    for(i = 0; i < 10; i++) {
-        print "O número i é : " i
-    }
+    # num = 0
+    # while(num < 10) {
+    #     print num
+    #     num = num + 1
+    # }
+
+    # for(i = 0; i < 10; i++) {
+    #     print "O número i é : " i
+    # }
 }
